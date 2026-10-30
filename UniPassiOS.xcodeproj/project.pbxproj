@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C81B0263E18BBA4AE2FA9BD5 /* UniPassiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC104BB6FD7BC64ED18FAEC /* UniPassiOSApp.swift */; };
+		95B24E20B59C1DA957576F65 /* BarraBusquedaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793AF0BBE3297F9A3EB9180E /* BarraBusquedaView.swift */; };
+		A46667E75C2AA35CEEBE3077 /* EstadoVacioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3D9BEBE9304E2A446F9382 /* EstadoVacioView.swift */; };
+		0E8BD8A1E37ABB97F06328D6 /* FiltrosOfertaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C5487E671E0BBB75F46275 /* FiltrosOfertaView.swift */; };
+		E4B022A6D684FBFA414CDB0F /* OfertaCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8580A390DCCFA8A914316 /* OfertaCardView.swift */; };
+		E581F7CC210C7A2DB6AF0C5D /* PilaConDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562DEF9D033D2854E6F44439 /* PilaConDetalle.swift */; };
+		309982751E5F5889B4738068 /* DatosIniciales.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02769E254A99CE30423F45A /* DatosIniciales.swift */; };
+		0606E3B02A181C3C3FC89BB4 /* Oferta.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFF9F31FCD58780CE72D3BB /* Oferta.swift */; };
+		B18CD9F8B5861DA86A28B53E /* OfertaUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00FD627E58A562A65E1DC0A /* OfertaUsuario.swift */; };
+		53E444196F6BF15E505A2168 /* PerfilUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7C581BA3F803EF9FC6F91A /* PerfilUsuario.swift */; };
+		D18EFE25EFEFE0ED62323F18 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99C36435924A557A99578B0 /* Usuario.swift */; };
+		336E7EC6EC9D9B6B7456C7E9 /* UniPassModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F438205055D5B169F5C2066 /* UniPassModelContainer.swift */; };
+		E506DA6312323BFA3BB04DAC /* OfertaAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E0E920D07D1097398C1AA8 /* OfertaAPIService.swift */; };
+		74B794C723A921AAABD4FB4C /* Tema.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35780A3AFFE0A74CDEDE0A5 /* Tema.swift */; };
+		86EFCDC4936DAB8011944C8E /* Utilidades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698EC024E9061B97F86FB733 /* Utilidades.swift */; };
+		1B475AA7C2B81FA4FDFA7352 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C108F2B9D470B1C78A5662E4 /* AuthViewModel.swift */; };
+		4BB25A33B081DF5BA16931E8 /* OfertasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E466301C184664B75F5C676B /* OfertasViewModel.swift */; };
+		A1742D36FA9435F4620F4206 /* PerfilViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C244178B726BAAA04BE97A /* PerfilViewModel.swift */; };
+		6A61A33166D63D656E89FE64 /* AcercaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B1BA0029C76D947895208D /* AcercaView.swift */; };
+		63700EB9ADEB317B73B436F5 /* BusquedaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68FCEC86BBE18BBBCA142F6 /* BusquedaView.swift */; };
+		0C29131D10EEA3D5F5CE139D /* DetalleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CFFA2D0C62F1023B1D591B /* DetalleView.swift */; };
+		CAABF0084970BDEB299DCA56 /* EditarPerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4395C1CFE6D54C2661FF2D /* EditarPerfilView.swift */; };
+		D53C8D399828A19E434DF97B /* GuardadosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F206505809B90ED72EA48D /* GuardadosView.swift */; };
+		A38DF99514B95C0EB2A9B447 /* InicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD362AF274F89362286545F /* InicioView.swift */; };
+		4ABAC196D5230D491F9BF1B5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEEB9AC1A2754F2C0E17877 /* LoginView.swift */; };
+		E35CA08B73D6D07928BACC17 /* PerfilTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77268E61364746B9CB14E82 /* PerfilTabView.swift */; };
+		DF9C309ACD3C608B5F5D4213 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE0E09DAEC0380D5064D918 /* PerfilView.swift */; };
+		26D41919C7142AC0B2BA2F85 /* PostulacionesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087512D47D07E9AB6084D00B /* PostulacionesView.swift */; };
+		8768CA469F150A55DE881FA4 /* PrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067A0EAF94164D4A5B98FE81 /* PrincipalView.swift */; };
+		22379B46CD1B6B7B9F61276B /* RaizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAF49071DCA9D65CF9FD9EF /* RaizView.swift */; };
+		6352F13A3BD4D73D05195988 /* RegistroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A673668C29C81E6BAE3190F /* RegistroView.swift */; };
+		71AE3B17293C6A8E343915E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175DF73D33C2DD0722DC9273 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A051833884CAD67525EA10B8 /* UniPassiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniPassiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CC104BB6FD7BC64ED18FAEC /* UniPassiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniPassiOSApp.swift; sourceTree = "<group>"; };
+		793AF0BBE3297F9A3EB9180E /* BarraBusquedaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarraBusquedaView.swift; sourceTree = "<group>"; };
+		FF3D9BEBE9304E2A446F9382 /* EstadoVacioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstadoVacioView.swift; sourceTree = "<group>"; };
+		F1C5487E671E0BBB75F46275 /* FiltrosOfertaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltrosOfertaView.swift; sourceTree = "<group>"; };
+		C9B8580A390DCCFA8A914316 /* OfertaCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaCardView.swift; sourceTree = "<group>"; };
+		562DEF9D033D2854E6F44439 /* PilaConDetalle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilaConDetalle.swift; sourceTree = "<group>"; };
+		C02769E254A99CE30423F45A /* DatosIniciales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosIniciales.swift; sourceTree = "<group>"; };
+		EEFF9F31FCD58780CE72D3BB /* Oferta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oferta.swift; sourceTree = "<group>"; };
+		F00FD627E58A562A65E1DC0A /* OfertaUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaUsuario.swift; sourceTree = "<group>"; };
+		AC7C581BA3F803EF9FC6F91A /* PerfilUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilUsuario.swift; sourceTree = "<group>"; };
+		B99C36435924A557A99578B0 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		7F438205055D5B169F5C2066 /* UniPassModelContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniPassModelContainer.swift; sourceTree = "<group>"; };
+		09E0E920D07D1097398C1AA8 /* OfertaAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaAPIService.swift; sourceTree = "<group>"; };
+		F35780A3AFFE0A74CDEDE0A5 /* Tema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tema.swift; sourceTree = "<group>"; };
+		698EC024E9061B97F86FB733 /* Utilidades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilidades.swift; sourceTree = "<group>"; };
+		C108F2B9D470B1C78A5662E4 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		E466301C184664B75F5C676B /* OfertasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertasViewModel.swift; sourceTree = "<group>"; };
+		A3C244178B726BAAA04BE97A /* PerfilViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewModel.swift; sourceTree = "<group>"; };
+		D9B1BA0029C76D947895208D /* AcercaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcercaView.swift; sourceTree = "<group>"; };
+		C68FCEC86BBE18BBBCA142F6 /* BusquedaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusquedaView.swift; sourceTree = "<group>"; };
+		59CFFA2D0C62F1023B1D591B /* DetalleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleView.swift; sourceTree = "<group>"; };
+		CF4395C1CFE6D54C2661FF2D /* EditarPerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarPerfilView.swift; sourceTree = "<group>"; };
+		E5F206505809B90ED72EA48D /* GuardadosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardadosView.swift; sourceTree = "<group>"; };
+		ACD362AF274F89362286545F /* InicioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioView.swift; sourceTree = "<group>"; };
+		8CEEB9AC1A2754F2C0E17877 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B77268E61364746B9CB14E82 /* PerfilTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilTabView.swift; sourceTree = "<group>"; };
+		BDE0E09DAEC0380D5064D918 /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
+		087512D47D07E9AB6084D00B /* PostulacionesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostulacionesView.swift; sourceTree = "<group>"; };
+		067A0EAF94164D4A5B98FE81 /* PrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalView.swift; sourceTree = "<group>"; };
+		7BAF49071DCA9D65CF9FD9EF /* RaizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaizView.swift; sourceTree = "<group>"; };
+		2A673668C29C81E6BAE3190F /* RegistroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroView.swift; sourceTree = "<group>"; };
+		175DF73D33C2DD0722DC9273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2B13AF90BE977AF86E653D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1C9DC8D91D872874E7477F2 = {
+			isa = PBXGroup;
+			children = (
+				503571F152C1FBEC513DA1C7 /* UniPassiOS */,
+				6796199D14F7BF89804BB59A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6796199D14F7BF89804BB59A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A051833884CAD67525EA10B8 /* UniPassiOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		503571F152C1FBEC513DA1C7 /* UniPassiOS */ = {
+			isa = PBXGroup;
+			children = (
+				3CC104BB6FD7BC64ED18FAEC /* UniPassiOSApp.swift */,
+				4CA4EFCC95C943A003B755AD /* Components */,
+				7ED267ADFFC7B3C062ED3BAC /* Models */,
+				3BAFD12AE1D247BFE04CDC9D /* Persistence */,
+				B13BE351F7E941BC407303C3 /* Services */,
+				0B8D26EE4F389B9CA4E5C207 /* Theme */,
+				1F489ADBB1ED1293AB7FDBF8 /* Utilities */,
+				0201C6BA408979F8BEE3621A /* ViewModels */,
+				22E2D4DA0389CC939E5EE17D /* Views */,
+				175DF73D33C2DD0722DC9273 /* Assets.xcassets */,
+			);
+			path = UniPassiOS;
+			sourceTree = "<group>";
+		};
+		4CA4EFCC95C943A003B755AD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				793AF0BBE3297F9A3EB9180E /* BarraBusquedaView.swift */,
+				FF3D9BEBE9304E2A446F9382 /* EstadoVacioView.swift */,
+				F1C5487E671E0BBB75F46275 /* FiltrosOfertaView.swift */,
+				C9B8580A390DCCFA8A914316 /* OfertaCardView.swift */,
+				562DEF9D033D2854E6F44439 /* PilaConDetalle.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7ED267ADFFC7B3C062ED3BAC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C02769E254A99CE30423F45A /* DatosIniciales.swift */,
+				EEFF9F31FCD58780CE72D3BB /* Oferta.swift */,
+				F00FD627E58A562A65E1DC0A /* OfertaUsuario.swift */,
+				AC7C581BA3F803EF9FC6F91A /* PerfilUsuario.swift */,
+				B99C36435924A557A99578B0 /* Usuario.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3BAFD12AE1D247BFE04CDC9D /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				7F438205055D5B169F5C2066 /* UniPassModelContainer.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		B13BE351F7E941BC407303C3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				09E0E920D07D1097398C1AA8 /* OfertaAPIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0B8D26EE4F389B9CA4E5C207 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				F35780A3AFFE0A74CDEDE0A5 /* Tema.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		1F489ADBB1ED1293AB7FDBF8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				698EC024E9061B97F86FB733 /* Utilidades.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0201C6BA408979F8BEE3621A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C108F2B9D470B1C78A5662E4 /* AuthViewModel.swift */,
+				E466301C184664B75F5C676B /* OfertasViewModel.swift */,
+				A3C244178B726BAAA04BE97A /* PerfilViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		22E2D4DA0389CC939E5EE17D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9B1BA0029C76D947895208D /* AcercaView.swift */,
+				C68FCEC86BBE18BBBCA142F6 /* BusquedaView.swift */,
+				59CFFA2D0C62F1023B1D591B /* DetalleView.swift */,
+				CF4395C1CFE6D54C2661FF2D /* EditarPerfilView.swift */,
+				E5F206505809B90ED72EA48D /* GuardadosView.swift */,
+				ACD362AF274F89362286545F /* InicioView.swift */,
+				8CEEB9AC1A2754F2C0E17877 /* LoginView.swift */,
+				B77268E61364746B9CB14E82 /* PerfilTabView.swift */,
+				BDE0E09DAEC0380D5064D918 /* PerfilView.swift */,
+				087512D47D07E9AB6084D00B /* PostulacionesView.swift */,
+				067A0EAF94164D4A5B98FE81 /* PrincipalView.swift */,
+				7BAF49071DCA9D65CF9FD9EF /* RaizView.swift */,
+				2A673668C29C81E6BAE3190F /* RegistroView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3609CD31972DD7EA2B8844A7 /* UniPassiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14FECA45A33D40FE808F98FD /* Build configuration list for PBXNativeTarget "UniPassiOS" */;
+			buildPhases = (
+				0100C03E8601CAD2E567C034 /* Sources */,
+				C2B13AF90BE977AF86E653D1 /* Frameworks */,
+				E7079FC1E1CB7905B0673BAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UniPassiOS;
+			productName = UniPassiOS;
+			productReference = A051833884CAD67525EA10B8 /* UniPassiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34CAE16181F78659DF4BD0D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					3609CD31972DD7EA2B8844A7 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = CF95DA133FC5F1F1506EEBE3 /* Build configuration list for PBXProject "UniPassiOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = es;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				es,
+				Base,
+			);
+			mainGroup = B1C9DC8D91D872874E7477F2;
+			productRefGroup = 6796199D14F7BF89804BB59A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3609CD31972DD7EA2B8844A7 /* UniPassiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7079FC1E1CB7905B0673BAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71AE3B17293C6A8E343915E2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0100C03E8601CAD2E567C034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C81B0263E18BBA4AE2FA9BD5 /* UniPassiOSApp.swift in Sources */,
+				95B24E20B59C1DA957576F65 /* BarraBusquedaView.swift in Sources */,
+				A46667E75C2AA35CEEBE3077 /* EstadoVacioView.swift in Sources */,
+				0E8BD8A1E37ABB97F06328D6 /* FiltrosOfertaView.swift in Sources */,
+				E4B022A6D684FBFA414CDB0F /* OfertaCardView.swift in Sources */,
+				E581F7CC210C7A2DB6AF0C5D /* PilaConDetalle.swift in Sources */,
+				309982751E5F5889B4738068 /* DatosIniciales.swift in Sources */,
+				0606E3B02A181C3C3FC89BB4 /* Oferta.swift in Sources */,
+				B18CD9F8B5861DA86A28B53E /* OfertaUsuario.swift in Sources */,
+				53E444196F6BF15E505A2168 /* PerfilUsuario.swift in Sources */,
+				D18EFE25EFEFE0ED62323F18 /* Usuario.swift in Sources */,
+				336E7EC6EC9D9B6B7456C7E9 /* UniPassModelContainer.swift in Sources */,
+				E506DA6312323BFA3BB04DAC /* OfertaAPIService.swift in Sources */,
+				74B794C723A921AAABD4FB4C /* Tema.swift in Sources */,
+				86EFCDC4936DAB8011944C8E /* Utilidades.swift in Sources */,
+				1B475AA7C2B81FA4FDFA7352 /* AuthViewModel.swift in Sources */,
+				4BB25A33B081DF5BA16931E8 /* OfertasViewModel.swift in Sources */,
+				A1742D36FA9435F4620F4206 /* PerfilViewModel.swift in Sources */,
+				6A61A33166D63D656E89FE64 /* AcercaView.swift in Sources */,
+				63700EB9ADEB317B73B436F5 /* BusquedaView.swift in Sources */,
+				0C29131D10EEA3D5F5CE139D /* DetalleView.swift in Sources */,
+				CAABF0084970BDEB299DCA56 /* EditarPerfilView.swift in Sources */,
+				D53C8D399828A19E434DF97B /* GuardadosView.swift in Sources */,
+				A38DF99514B95C0EB2A9B447 /* InicioView.swift in Sources */,
+				4ABAC196D5230D491F9BF1B5 /* LoginView.swift in Sources */,
+				E35CA08B73D6D07928BACC17 /* PerfilTabView.swift in Sources */,
+				DF9C309ACD3C608B5F5D4213 /* PerfilView.swift in Sources */,
+				26D41919C7142AC0B2BA2F85 /* PostulacionesView.swift in Sources */,
+				8768CA469F150A55DE881FA4 /* PrincipalView.swift in Sources */,
+				22379B46CD1B6B7B9F61276B /* RaizView.swift in Sources */,
+				6352F13A3BD4D73D05195988 /* RegistroView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		54FDD6A586290D010D90797B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C1C85B5A1ACEB22E76A4798F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66FCF0B74B00A3E80D5593F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = UniPass;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.unicauca.UniPassiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F71C695FEEA0FE28DE56988E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = UniPass;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.unicauca.UniPassiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF95DA133FC5F1F1506EEBE3 /* Build configuration list for PBXProject "UniPassiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54FDD6A586290D010D90797B /* Debug */,
+				C1C85B5A1ACEB22E76A4798F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14FECA45A33D40FE808F98FD /* Build configuration list for PBXNativeTarget "UniPassiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66FCF0B74B00A3E80D5593F0 /* Debug */,
+				F71C695FEEA0FE28DE56988E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34CAE16181F78659DF4BD0D1 /* Project object */;
+}
