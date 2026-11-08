@@ -11,6 +11,47 @@ extension String {
     }
 }
 
+
+extension Date {
+    /// Texto relativo en español: "hace 3 días", "hace 2 horas"...
+    var haceCuanto: String {
+        let ahora = Date()
+        // Si el reloj del servidor va adelantado, no mostramos fechas "del futuro".
+        let fecha = Swift.min(self, ahora)
+        if ahora.timeIntervalSince(fecha) < 3600 {
+            return "hace menos de una hora"
+        }
+        let formateador = RelativeDateTimeFormatter()
+        formateador.locale = Locale(identifier: "es")
+        formateador.unitsStyle = .full
+        return formateador.localizedString(for: fecha, relativeTo: ahora)
+    }
+}
+
+/// Lee la fecha de publicación que envía la API (texto ISO 8601, normalmente sin zona horaria).
+enum FechaAPI {
+
+    private static let formatos = [
+        "yyyy-MM-dd'T'HH:mm:ss",
+        "yyyy-MM-dd'T'HH:mm:ss.SSS",
+        "yyyy-MM-dd'T'HH:mm:ssXXXXX",
+        "yyyy-MM-dd'T'HH:mm:ss.SSSXXXXX"
+    ]
+
+    static func convertir(_ texto: String?) -> Date? {
+        guard let texto = texto?.trimmed, !texto.isEmpty else { return nil }
+        let lector = DateFormatter()
+        lector.locale = Locale(identifier: "en_US_POSIX")
+        lector.timeZone = TimeZone(identifier: "UTC")
+        for formato in formatos {
+            lector.dateFormat = formato
+            if let fecha = lector.date(from: texto) { return fecha }
+        }
+        return nil
+    }
+}
+
+
 /// Convierte el HTML que devuelve la API en texto plano legible.
 enum TextoLimpio {
 
