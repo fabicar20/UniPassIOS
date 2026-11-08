@@ -103,6 +103,10 @@ struct OfertaAPIService {
 
 extension RemotiveJob {
 
+
+    /// Fecha de publicación ya convertida a `Date` (o `nil` si la API no la envía o viene rara).
+    var fecha: Date? { FechaAPI.convertir(publicationDate) }
+
     /// Convierte un empleo de la API en una `Oferta` que se guarda en SwiftData.
     func aOferta() -> Oferta {
         let esPasantia = (jobType ?? "").lowercased() == "internship"
@@ -142,7 +146,8 @@ extension RemotiveJob {
             validaRequisitoGrado: esPasantia,
             descripcion: TextoLimpio.desdeHTML(description ?? ""),
             urlOriginal: url ?? "",
-            origen: "Remotive"
+             origen: "Remotive",
+                      fechaPublicacion: fecha
         )
     }
 }
