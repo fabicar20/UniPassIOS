@@ -31,6 +31,11 @@ final class Oferta {
     var urlOriginal: String
     var origen: String             // "Local" o "Remotive"
 
+    /// Fecha en que se publicó la oferta (solo las que vienen de la API).
+    /// Es opcional para que las ofertas locales y la base de datos ya creada sigan funcionando.
+    var fechaPublicacion: Date?
+
+
     init(
         id: Int,
         titulo: String,
@@ -46,7 +51,8 @@ final class Oferta {
         validaRequisitoGrado: Bool = true,
         descripcion: String = "",
         urlOriginal: String = "",
-        origen: String = "Local"
+        origen: String = "Local",
+               fechaPublicacion: Date? = nil
     ) {
         self.id = id
         self.titulo = titulo
@@ -62,12 +68,19 @@ final class Oferta {
         self.validaRequisitoGrado = validaRequisitoGrado
         self.descripcion = descripcion
         self.urlOriginal = urlOriginal
-        self.origen = origen
+      self.origen = origen
+              self.fechaPublicacion = fechaPublicacion
     }
 
     var listaResponsabilidades: [String] { Oferta.lineas(responsabilidades) }
     var listaRequisitos: [String] { Oferta.lineas(requisitos) }
     var vieneDeAPI: Bool { origen != "Local" }
+
+
+    /// Ejemplo: "Publicada hace 3 días". `nil` si la oferta no tiene fecha.
+    var textoPublicacion: String? {
+        fechaPublicacion.map { "Publicada " + $0.haceCuanto }
+    }
 
     private static func lineas(_ texto: String) -> [String] {
         texto
