@@ -30,10 +30,14 @@ struct FiltrosOfertaView: View {
                 }
             }
 
-            Toggle("Solo ofertas válidas para requisito de grado", isOn: $vm.soloRequisitoGrado)
-                .font(.subheadline)
-                .tint(Color.unipassPrimary)
-        }
+                        Toggle("Solo ofertas válidas para requisito de grado", isOn: $vm.soloRequisitoGrado)
+                            .font(.subheadline)
+                            .tint(Color.unipassPrimary)
+
+                        Toggle("Mostrar primero las más recientes", isOn: $vm.masRecientesPrimero)
+                            .font(.subheadline)
+                            .tint(Color.unipassPrimary)
+                    }
     }
 }
 
