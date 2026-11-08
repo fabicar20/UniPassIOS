@@ -29,6 +29,12 @@ struct OfertaCardView<Pie: View>: View {
                 .font(.subheadline)
                 .foregroundStyle(Color.unipassTextoSecundario)
 
+   if let publicada = oferta.textoPublicacion {
+                Label(publicada, systemImage: "clock")
+                    .font(.subheadline)
+                    .foregroundStyle(Color.unipassTextoSecundario)
+            }
+
             if oferta.vieneDeAPI {
                 Label("Oferta en línea · \(oferta.origen)", systemImage: "globe")
                     .font(.caption)

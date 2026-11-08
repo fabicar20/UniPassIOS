@@ -52,6 +52,9 @@ struct DetalleView: View {
                 DatoView(icono: "clock", titulo: "Duración", valor: o.duracion)
                 DatoView(icono: "calendar", titulo: "Horario", valor: o.horario)
                 DatoView(icono: "banknote", titulo: "Remuneración", valor: o.remuneracion)
+                                if let publicada = o.textoPublicacion {
+                                    DatoView(icono: "clock.arrow.circlepath", titulo: "Publicación", valor: publicada)
+                                }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .tarjetaUniPass()
