@@ -30,6 +30,7 @@ final class OfertasViewModel {
     var modalidad: String?
     var tipo: String?
     var soloRequisitoGrado = false
+        var masRecientesPrimero = false
 
     // MARK: - Estado de la red
 
@@ -48,7 +49,7 @@ final class OfertasViewModel {
 
     var ofertasFiltradas: [Oferta] {
         let texto = consulta.trimmed
-        return ofertas.filter { oferta in
+          let resultado = ofertas.filter { oferta in
             if !texto.isEmpty {
                 let coincide = oferta.titulo.localizedCaseInsensitiveContains(texto)
                     || oferta.empresa.localizedCaseInsensitiveContains(texto)
@@ -58,10 +59,16 @@ final class OfertasViewModel {
             if let ubicacion, oferta.ubicacion != ubicacion { return false }
             if let modalidad, oferta.modalidad != modalidad { return false }
             if let tipo, oferta.tipo != tipo { return false }
-            if soloRequisitoGrado && !oferta.validaRequisitoGrado { return false }
-            return true
-        }
-    }
+                       if soloRequisitoGrado && !oferta.validaRequisitoGrado { return false }
+                       return true
+                   }
+
+                   // Las ofertas sin fecha (las locales) quedan al final.
+                   guard masRecientesPrimero else { return resultado }
+                   return resultado.sorted {
+                       ($0.fechaPublicacion ?? .distantPast) > ($1.fechaPublicacion ?? .distantPast)
+                   }
+               }
 
     var guardadas: [Oferta] {
         ofertas.filter { estaGuardada($0) }
@@ -102,12 +109,13 @@ final class OfertasViewModel {
         ubicacion = nil
         modalidad = nil
         tipo = nil
-        soloRequisitoGrado = false
-    }
+              soloRequisitoGrado = false
+              masRecientesPrimero = false
+          }
 
     var hayFiltrosActivos: Bool {
         !consulta.trimmed.isEmpty || ubicacion != nil || modalidad != nil
-            || tipo != nil || soloRequisitoGrado
+                        || tipo != nil || soloRequisitoGrado || masRecientesPrimero
     }
 
     // MARK: - Acciones del usuario
@@ -141,7 +149,13 @@ final class OfertasViewModel {
 
             for trabajo in trabajos {
                 let idLocal = Oferta.idBaseAPI + trabajo.id
-                if ofertas.contains(where: { $0.id == idLocal }) { continue }
+                               if let existente = ofertas.first(where: { $0.id == idLocal }) {
+                                   // Ofertas guardadas antes de existir la fecha: la completamos.
+                                   if existente.fechaPublicacion == nil {
+                                       existente.fechaPublicacion = trabajo.fecha
+                                   }
+                                   continue
+                               }
                 context.insert(trabajo.aOferta())
                 nuevas += 1
             }
