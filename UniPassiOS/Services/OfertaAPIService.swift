@@ -103,7 +103,6 @@ struct OfertaAPIService {
 
 extension RemotiveJob {
 
-
     /// Fecha de publicación ya convertida a `Date` (o `nil` si la API no la envía o viene rara).
     var fecha: Date? { FechaAPI.convertir(publicationDate) }
 
