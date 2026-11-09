@@ -146,8 +146,8 @@ extension RemotiveJob {
             validaRequisitoGrado: esPasantia,
             descripcion: TextoLimpio.desdeHTML(description ?? ""),
             urlOriginal: url ?? "",
-             origen: "Remotive",
-                      fechaPublicacion: fecha
+            origen: "Remotive",
+            fechaPublicacion: fecha
         )
     }
 }
