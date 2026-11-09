@@ -44,6 +44,13 @@ enum ErrorAPI: LocalizedError {
     }
 }
 
+// MARK: - Configuración de la API
+
+private enum ConfiguracionRemotive {
+    static let urlBase = "https://remotive.com/api/remote-jobs"
+    static let categoria = "software-dev"
+}
+
 // MARK: - Servicio de red
 
 /// Capa de RED: pide las ofertas a una API pública en Internet usando URLSession
@@ -59,11 +66,11 @@ struct OfertaAPIService {
     }
 
     func obtenerOfertas(limite: Int = 20) async throws -> [RemotiveJob] {
-        guard var componentes = URLComponents(string: "https://remotive.com/api/remote-jobs") else {
+        guard var componentes = URLComponents(string: ConfiguracionRemotive.urlBase) else {
             throw ErrorAPI.urlInvalida
         }
         componentes.queryItems = [
-            URLQueryItem(name: "category", value: "software-dev"),
+            URLQueryItem(name: "category", value: ConfiguracionRemotive.categoria),
             URLQueryItem(name: "limit", value: String(limite))
         ]
         guard let url = componentes.url else {
@@ -102,7 +109,6 @@ struct OfertaAPIService {
 // MARK: - De la API al modelo local
 
 extension RemotiveJob {
-
 
     /// Fecha de publicación ya convertida a `Date` (o `nil` si la API no la envía o viene rara).
     var fecha: Date? { FechaAPI.convertir(publicationDate) }
@@ -146,8 +152,8 @@ extension RemotiveJob {
             validaRequisitoGrado: esPasantia,
             descripcion: TextoLimpio.desdeHTML(description ?? ""),
             urlOriginal: url ?? "",
-             origen: "Remotive",
-                      fechaPublicacion: fecha
+            origen: "Remotive",
+            fechaPublicacion: fecha
         )
     }
 }
