@@ -61,6 +61,7 @@ struct RegistroView: View {
                 .buttonStyle(.borderedProminent)
                 .controlSize(.large)
                 .padding(.top, 8)
+                .disabled(nombre.trimmed.isEmpty || correo.trimmed.isEmpty || clave.isEmpty || confirmacion.isEmpty)
 
                 Button {
                     auth.limpiarError()
